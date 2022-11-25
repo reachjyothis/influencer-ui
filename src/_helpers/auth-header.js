@@ -6,7 +6,8 @@
  */
 export function authHeader() {
   // return authorization header with basic auth credentials
-  let token = localStorage.getItem("token");
+  // let token = localStorage.getItem("token");
+  let token = "XaRNLF5tafDTZQWp3akjji17qBul4WLB"
 
   if (token) {
     return { Authorization: "Token " + token };

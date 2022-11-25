@@ -1,5 +1,5 @@
 const config = {
-  apiUrl: "https://api.publicapis.org",
+  apiUrl: "https://api.modash.io/v1/",
 };
 
 export default config;

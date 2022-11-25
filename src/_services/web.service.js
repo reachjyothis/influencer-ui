@@ -17,7 +17,7 @@ export const webService = {
     const methodsWithData = [HttpMethod.POST, HttpMethod.PATCH];
   
     const headers = methodsWithData.includes(method)
-      ? Object.assign({}, authHeader(), { "Content-Type": "application/json" })
+      ? Object.assign({}, authHeader(), { "Content-Type": "application/json", 'Access-Control-Allow-Origin': '*' })
       : authHeader();
     const requestOptions = {
       method: method,

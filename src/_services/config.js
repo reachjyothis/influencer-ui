@@ -1,5 +1,5 @@
 const config = {
-  apiUrl: "",
+  apiUrl: "https://api.publicapis.org",
 };
 
 export default config;

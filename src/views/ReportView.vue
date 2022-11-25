@@ -1,8 +1,9 @@
 <template>
     <div class="home">
-        <div v-for="(report, index) in reportsData" :key="index">
+        <!-- <div v-for="(report, index) in reportsData" :key="index">
             <ReportsSection :reportInfo="report" />
-        </div>
+        </div> -->
+        <ReportsSection :reportInfo="reportsData" />
     </div>
 </template>
   
@@ -26,7 +27,7 @@ export default {
     methods: {
         loadData() {
             webService
-                .req(HttpMethod.GET, "/data/")
+                .req(HttpMethod.GET, "/entries")
                 .then((data) => {
                     this.reportsData = data;
                 })

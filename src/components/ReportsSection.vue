@@ -1,6 +1,5 @@
 <template>
     <div class="hello">
-      <div>{{ reportInfo.name }}</div>
       <table>
         <!-- show the data-->
       </table>

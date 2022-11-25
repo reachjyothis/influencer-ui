@@ -1,4 +1,58 @@
 {
-  "name": "morpheus",
-  "job": "leader"
+  "sort": {
+    "field": "followers",
+    "id": 123,
+    "direction": "desc"
+  },
+  "page": 0,
+  "filter": {
+    "influencer": {
+      "followers": {
+        "min": 20000,
+        "max": 70000
+      },
+      "engagementRate": 0.02,
+      "location": [
+        148838,
+        307573,
+        79510
+      ],
+      "language": "en",
+      "lastposted": 90,
+      "relevance": [
+        "#cars",
+        "@topgear"
+      ],
+      "gender": "FEMALE",
+      "followersGrowthRate": {
+        "interval": "i1month",
+        "value": 3,
+        "operator": "gt"
+      },
+      "views": {
+        "min": 5000,
+        "max": 10000
+      },
+      "hasContactDetails": [
+        {
+          "contactType": "email",
+          "filterAction": "must"
+        }
+      ],
+      "keywords": "cats"
+    },
+    "audience": {
+      "location": [
+        148838,
+        307573,
+        79510
+      ],
+      "language": "en",
+      "gender": "FEMALE",
+      "age": [
+        "18-24",
+        "65-"
+      ]
+    }
+  }
 }
